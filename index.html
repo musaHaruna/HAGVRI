@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wildvine - Give Love for Saving World Animals</title>
+  <title>HAGVRI - Hope for All Global Vision Reach Initiative </title>
 
   <!-- 
     - favicon
@@ -32,15 +32,14 @@
   <!-- 
     - #HEADER
   -->
-
   <header class="header" data-header>
     <div class="container">
 
-      <h1>
-        <a href="#" class="logo nav"><img src="assets/images/logo.png" width="100px" alt="">
-          <span>HAGVRI</span>
-        </a>
+      <h1 class="logo-nav">
+        <img src="./assets/images/logo.png" alt="" width="50px">
+        <a href="#" class="logo">HAGVRI</a>
       </h1>
+
 
 
       <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
@@ -53,7 +52,10 @@
           <ion-icon name="close-outline"></ion-icon>
         </button>
 
-        <a href="#" class="logo">Wildvine</a>
+        <a href="#" class="logo-nav logo"><img src="./assets/images/logo.png" alt="" width="50px"> HAGVRI
+
+
+        </a>
 
         <ul class="navbar-list">
 
@@ -80,41 +82,29 @@
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
           <li>
-            <a href="#donate" class="navbar-link" data-nav-link>
-              <span>Donate</span>
+            <a href="#BOT" class="navbar-link" data-nav-link>
+              <span>Board of Trustees</span>
 
               <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
             </a>
           </li>
-
-
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>
-              <span>Contact</span>
-
-              <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
-            </a>
-          </li>
-
         </ul>
 
       </nav>
 
       <div class="header-action">
-
-
-        <button class="btn btn-primary">
-          <span>Donation</span>
+        <a class="btn btn-primary" href="#donate">
+          <span>Donate</span>
 
           <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-        </button>
+        </a>
 
       </div>
 
     </div>
   </header>
+
 
 
 
@@ -148,22 +138,14 @@
             a brighter future and being a beacon of hope for those in need.
           </p>
 
-          <button class="btn btn-primary">
-            <span>Donation</span>
+          <a class="btn btn-primary" href="#donate">
+            <span>Donate</span>
 
             <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
-          </button>
+          </a>
 
         </div>
       </section>
-
-
-
-
-
-      <!-- 
-        - #FEATURES
-      -->
 
       <section class="section features">
         <div class="container">
@@ -480,7 +462,7 @@
         - #DONATE
       -->
 
-      <section class="section donate" id="donate">
+      <section class="section donate" id="BOT">
         <div class="container">
 
           <p class="section-subtitle">
@@ -504,7 +486,7 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Mr. Alex</h3>
+                  <h3 class="h3 card-title">Mr. Alex Omale Idoko</h3>
 
                   <button class="btn btn-secondary">
                     <span>Chairman</span>
@@ -587,7 +569,7 @@
 
                 <div class="card-content">
 
-                  <h3 class="h3 card-title">Dr. Dr. Micheal E. Omale</h3>
+                  <h3 class="h3 card-title">Dr. Micheal E. Omale</h3>
 
                   <button class="btn btn-secondary">
                     <span>Member</span>
@@ -662,6 +644,31 @@
         </figure>
 
       </section>
+
+      <section id="donate">
+        <form id="paymentForm" class="paystack-container">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email-address" required />
+          </div>
+          <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="tel" id="amount" required />
+          </div>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+          </div>
+          <div class="form-submit">
+            <button type="submit" onclick="payWithPaystack()"> Donate </button>
+          </div>
+        </form>
+      </section>
+
 
       <!-- 
         - #INSTA POST
@@ -755,7 +762,8 @@
 
 
 
-
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="js/payment.js"></script>
 
   <!-- 
     - custom js link

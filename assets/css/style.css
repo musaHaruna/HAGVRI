@@ -10,11 +10,42 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
-.logo.nav {
+.logo-nav {
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
 
-  font-size: 24px;
+.paystack-container .form-group label {
+  margin: 0.5rem 0;
+}
+
+.form-group {
+  margin: 1.5rem auto;
+}
+
+.form-submit button {
+  display: block;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 0.75rem 0;
+  background-color: #1ca9e1;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.paystack-container .form-group input {
+  border: 1.5px solid gray;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.paystack-container .form-group input:focus {
+  outline-color: #1ca9e1;
+}
+
+.logo.nav img {
+  width: 60px;
 }
 
 .logo.nav p {
@@ -312,7 +343,7 @@ body {
   left: 0;
   width: 100%;
   background-color: transparent;
-  padding-block: 2rem;
+  padding-block: 0.85rem;
   z-index: 4;
 }
 
@@ -438,7 +469,6 @@ body {
   padding-block: 180px 60px;
   display: grid;
   align-items: center;
-  
 }
 
 .hero .section-subtitle {
@@ -699,6 +729,8 @@ body {
 
 .donate-list {
   display: grid;
+  grid-template-columns: 1fr;
+
   gap: 60px;
   margin-top: 5rem;
 }
@@ -709,8 +741,7 @@ body {
 
 .donate-card .card-banner {
   background-color: var(--light-gray);
-  width: 300px;
-  height: 300px;
+  height: 400px;
 }
 
 .donate-card.last {
@@ -721,7 +752,7 @@ body {
 .donate-card .card-content {
   background-color: var(--white);
 
-  padding: 35px;
+  padding: 1.5rem;
 }
 
 .progress-wrapper {
@@ -1081,6 +1112,13 @@ body {
   }
 }
 
+.paystack-container {
+  width: 80%;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 4px;
+  box-shadow: var(--card-shadow);
+}
 /**
  * responsive for larger than 580px screen
  */
@@ -1089,6 +1127,13 @@ body {
   /**
    * CUSTOM PROPERTY
    */
+  .paystack-container {
+    width: 30%;
+    margin: 4rem auto;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
+  }
 
   :root {
     /**
@@ -1104,13 +1149,10 @@ body {
 
   .donate-card {
     position: relative;
-    padding-block-end: 150px;
     box-shadow: none;
   }
 
   .donate-card .card-content {
-    position: absolute;
-    width: 85%;
     bottom: 0;
     right: 0;
     border-radius: 4px;
@@ -1227,6 +1269,10 @@ body {
   .footer-list {
     margin-block-end: 0;
   }
+
+  .card-banner {
+    height: auto;
+  }
 }
 
 /**
@@ -1238,6 +1284,9 @@ body {
    * CUSTOM PROPERTY
    */
 
+  .card-banner {
+    height: auto;
+  }
   :root {
     /**
      * typography
@@ -1356,7 +1405,8 @@ body {
    */
 
   .donate-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
     column-gap: 30px;
   }
 
@@ -1515,14 +1565,6 @@ body {
   /**
    * DONATE
    */
-
-  .donate-card {
-    padding-inline-end: 120px;
-  }
-
-  .donate-card .card-content {
-    width: 65%;
-  }
 
   /**
    * PARTNER
