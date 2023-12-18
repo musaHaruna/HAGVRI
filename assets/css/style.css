@@ -20,6 +20,10 @@
   margin: 0.5rem 0;
 }
 
+.cta {
+  width: 50%;
+}
+
 .form-group {
   margin: 1.5rem auto;
 }
@@ -1200,6 +1204,9 @@ body {
    * FEATURES, SERVICE
    */
 
+  .cta {
+    width: 20%;
+  }
   .features-list,
   .service-list {
     grid-template-columns: 1fr 1fr;
