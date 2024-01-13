@@ -786,6 +786,10 @@ body {
   margin-block: 10px 20px;
 }
 
+.h3.card-title {
+  font-size: 2.2rem;
+}
+
 .progress {
   height: 6px;
   width: 83%;
@@ -1412,7 +1416,7 @@ body {
    */
 
   .donate-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
     column-gap: 30px;
   }
