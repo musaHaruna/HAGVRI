@@ -1035,6 +1035,7 @@ body {
 .insta-post-item {
   min-width: 90%;
   scroll-snap-align: center;
+  height: 155px;
 }
 
 /*-----------------------------------*\
@@ -1072,6 +1073,7 @@ body {
 .copyright-link {
   text-decoration: underline;
   transition: var(--transition-1);
+  text-align: center;
 }
 
 .footer-link {
@@ -1267,7 +1269,7 @@ body {
   .footer .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: 40px;
     padding-inline: 40px;
   }
@@ -1294,6 +1296,17 @@ body {
   /**
    * CUSTOM PROPERTY
    */
+
+  .service-card {
+    background-color: var(--white);
+    text-align: center;
+    padding: 45px 40px;
+    height: 500px;
+    border-radius: 2px;
+    outline: 3px solid transparent;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-2);
+  }
 
   .card-banner {
     height: auto;
@@ -1455,6 +1468,7 @@ body {
 
   .insta-post-item {
     min-width: 24%;
+    hie
   }
 }
 
@@ -1473,6 +1487,17 @@ body {
      */
 
     --fs-3: 4.4rem;
+  }
+
+  .service-card {
+    background-color: var(--white);
+    text-align: center;
+    padding: 45px 40px;
+    height: 500px;
+    border-radius: 2px;
+    outline: 3px solid transparent;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-2);
   }
 
   /**
